@@ -29,8 +29,8 @@ const images = [
 function App() {
   const [imageUrl, setImageUrl] = useState(images[0]);
   const [loading, setLoading] = useState(false);
-    const [isSubmitted, setIsSubmitted] = useState(false);
-      const [submittedName, setSubmittedName] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submittedName, setSubmittedName] = useState("");
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-slate-200">
@@ -97,7 +97,7 @@ function App() {
                   {isSubmitted && (
                     <div className="flex flex-col items-center justify-center gap-2 mx-auto mt-4 text-green-500">
                       <div className="badge badge-lg badge-outline">
-                      {submittedName} 
+                        {submittedName}
                       </div>
                       Khodamu adalah
                     </div>
